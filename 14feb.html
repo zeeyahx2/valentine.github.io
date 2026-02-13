@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>willubemyvalentine(˶˃ ᵕ ˂˶) .ᐟ.ᐟ</title>
+    <link href="14feb.css" rel="stylesheet">
+</head>
+
+<body data-screen="screen-pass">
+    <audio id="bgm" src="asset/bgm.mp3" autoplay loop muted>
+    </audio>
+
+    <!--หน้าแรก-->
+    <section id="screen-pass" class="screen">
+        <div class = "pass-wrap">
+            <h1 class="title">Password</h1>
+            <p class="subtitle">When we start our relationship???</p>
+
+            <div id="passDots" class="pass-display">__/__/____</div>
+
+            <div class="keypad-panel">
+                <div class="keypad" id="keypad"></div>
+
+                <button id="enterBtn" class="btn-enter" type="button">
+                    Enter 
+                    <img src="asset/cat1.jpg" alt="cat first page" class="cat-enter">
+                </button>
+                <button id="clearBtn" class="btn-clear" type="button">Clear</button>
+
+                <p id="passMsg" class="msg">
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--หน้า2-->
+    <section id="screen-counter" class="screen hidden">
+        <div class="page2-grid">
+            <div class="big-card">
+                <div class="howmany">We start our relationship 
+                    <span id="days">0</span> days 
+                    <span id="hours">00</span> hours 
+                    <span id="mins">00</span> mins 
+                    <span id="secs">00</span> secs</div>
+                <div class="hint">คบกันมานามากแล้ว ยังรักณัฐมากๆๆเสมอเลย ไม่เจอหน้าก็จะหงอยตายTT สุขสันต์วันวาเลนไทน์ วันแห่งความรักนะ อยู่ฉลองทุกเทศกาลทุกปีกันไปนานๆนะ₊‧°𐐪♡𐑂°‧₊</div>
+
+                <img class="big photo" src="asset/cat2.jpg" alt="big pictur page2">
+            </div>
+
+            <div class="polaroids">
+                <!--<div class="polaroids tilt1"><img src="asset/photo2.jpg" alt=""></div>
+                <div class="polaroids tilt2"><img src="asset/photo3.jpg" alt=""></div>
+                <div class="polaroids tilt3"><img src="asset/photo4.jpg" alt=""></div>-->
+
+                <button id="toMessageBtn" class="btn-next" type="button">Next Page-&gt;</buttton>
+            </div>
+        </div>
+    </section>
+
+    <!--หน้า3-->
+    <section id="screen-message" class="screen hidden">
+        <div class="letter-card">
+            <textarea id="lovetext" class="letter" placeholder="อยู่ด้วยกันมานานมากเลยนะ มีความสุขมากๆเพราะณัฐทั้งอบอุ่นอ่อนโยนกับเค้ามาก>< ทั้งคอยรับฟังปัญหาอยู่ดูแลกันไม่ทิ้งกันไปไหน ในเมื่อเป็นวันแห่งความรักก็เลยอยากของขวัญอันนี้ให้ อาจจะดูยังเหมือนมือใหม่อยู่แต่ก็พยายามเรียนรู้การเขียนเพิ่มขึ้นเรื่อยๆ
+                 และสุดท้ายขอให้รักยืนยาว และมีความสุขด้วยกันไปนานๆนะ ♡(˃͈ દ ˂͈ ༶ )"></textarea>
+        </div>
+
+        <button id="toQuestionBtn" class="btn-next bottom-right" type="button">Next Page-&gt;</button>
+    </section>
+
+    <!--หน้า4-->
+    <section id="screen-question" class="screen hidden">
+        <div class="q-wrap">
+            <div class="q-title">Will you be my Valentine</div>
+            <div class="q-box">
+                <img class="q-img" src="asset/cat4.jpg" alt="">
+            </div>
+
+            <div class="choice">
+                <button id="noBtn" class="btn-no" type="button">No :-:</button>
+                <button id="yesBtn" class="btn-yes" type="button">Yes!!(˶˃ ᵕ ˂˶) .ᐟ.ᐟ</button>
+            </div>
+
+            <div id="result" class="result"></div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
